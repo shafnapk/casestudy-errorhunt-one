@@ -139,12 +139,12 @@
                 success: function(result){
                       console.log("Result = "+result)
                       if(result=="true"){
-                          console.log("User Verified continue");
-                          res.redirect("/home")
+                          console.log("User Verified continue");                         
+                          location.href = '/home';
                       }
                       else{
                           console.log("User Verification Failed");
-                          res.redirect("/signup");
+                          location.href = '/signup';
                       }                    
                     }
                 });

@@ -24,7 +24,7 @@ loginRouter.post('/check',function(req,res){
         }
     };
     console.log(flag);
-    let result = toString(flag)
+    let result = flag.toString();
     console.log(result)
     res.end(result)
 /* 
