@@ -58,7 +58,7 @@ app.get('/',function(req,res){
 
 const port = 3000;
 
-app.listen(port || 5000),()=>{
+app.listen(process.env.PORT || 5000 ,()=>{
     // Fixed the port number on the message (3000 to 5000)
     console.log("Server Ready");
 });
